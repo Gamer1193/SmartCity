@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mobility · Bhopal Smart City</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/content.css" />
+  <link rel="stylesheet" href="css/motion.css" />
+</head>
+<body data-page="mobility">
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+
+  <main>
+    <section class="section">
+      <header class="section-head">
+        <p class="eyebrow">Mobility</p>
+        <h1>Traffic & Transit</h1>
+        <p>Congestion hotspots, bus and metro status, and parking occupancy.</p>
+      </header>
+      <div class="grid grid-2">
+        <article class="card tilt-card" data-group="traffic"></article>
+        <article class="card tilt-card" data-group="transit"></article>
+      </div>
+    </section>
+
+    <section class="section">
+      <header class="section-head">
+        <h2>Traffic through the day</h2>
+        <p>Typical congestion by hour, and current road incidents.</p>
+      </header>
+      <div class="grid grid-2">
+        <article class="card">
+          <h3>Congestion by hour <small>% of capacity</small></h3>
+          <div data-chart="trafficHourly"></div>
+        </article>
+        <article class="card">
+          <h3>Road incidents</h3>
+          <div data-list="roadAlerts"></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <header class="section-head">
+        <h2>Signals and junctions</h2>
+        <p>Traffic signal status and waiting times at major junctions.</p>
+      </header>
+      <div class="grid grid-2">
+        <article class="card span-2">
+          <h3>Junctions <small>updated every few minutes</small></h3>
+          <div data-table="trafficSignals"></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <header class="section-head">
+        <h2>Buses and parking</h2>
+        <p>Bus route performance and parking availability across the city.</p>
+      </header>
+      <div class="grid grid-2">
+        <article class="card span-2">
+          <h3>Bus routes <small>today</small></h3>
+          <div data-table="busRoutes"></div>
+        </article>
+        <article class="card span-2">
+          <h3>Parking zones</h3>
+          <div data-table="parking"></div>
+        </article>
+      </div>
+    </section>
+
+    <footer class="footer"><p>Sample data shown for layout.</p></footer>
+  </main>
+
+  <script src="js/data.js"></script>
+  <script src="js/background.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/content.js"></script>
+  <script src="js/motion.js"></script>
+</body>
+</html>

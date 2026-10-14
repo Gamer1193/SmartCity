@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Public Services · Bhopal Smart City</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/content.css" />
+  <link rel="stylesheet" href="css/motion.css" />
+</head>
+<body data-page="services">
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+
+  <main>
+    <section class="section">
+      <header class="section-head">
+        <p class="eyebrow">Public Services</p>
+        <h1>Emergency & Citizen Services</h1>
+        <p>Emergency response readiness and the status of citizen complaints.</p>
+      </header>
+      <div class="grid grid-2">
+        <article class="card tilt-card" data-group="emergency"></article>
+        <article class="card tilt-card" data-group="complaints"></article>
+      </div>
+    </section>
+
+    <section class="section">
+      <header class="section-head">
+        <h2>Response by zone</h2>
+        <p>Average response time and available units in each zone.</p>
+      </header>
+      <div class="grid grid-2">
+        <article class="card span-2">
+          <h3>Emergency zones</h3>
+          <div data-table="emergencyZones"></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <header class="section-head">
+        <h2>Complaints</h2>
+        <p>What citizens are reporting, and how the cases are moving.</p>
+      </header>
+      <div class="grid grid-2">
+        <article class="card">
+          <h3>Complaints by type</h3>
+          <div data-chart="complaintsByType"></div>
+        </article>
+        <article class="card">
+          <h3>Helplines</h3>
+          <div class="helpline"><span>Emergency (all services)</span><strong>112</strong></div>
+          <div class="helpline"><span>Police</span><strong>100</strong></div>
+          <div class="helpline"><span>Fire</span><strong>101</strong></div>
+          <div class="helpline"><span>Ambulance</span><strong>102</strong></div>
+          <div class="helpline"><span>Women helpline</span><strong>1091</strong></div>
+          <div class="helpline"><span>Childline</span><strong>1098</strong></div>
+        </article>
+        <article class="card span-2">
+          <h3>Recent complaints <small>sample cases</small></h3>
+          <div data-table="complaintsRecent"></div>
+        </article>
+      </div>
+    </section>
+
+    <footer class="footer"><p>Sample data shown for layout.</p></footer>
+  </main>
+
+  <script src="js/data.js"></script>
+  <script src="js/background.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/content.js"></script>
+  <script src="js/motion.js"></script>
+</body>
+</html>

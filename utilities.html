@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Utilities · Bhopal Smart City</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/content.css" />
+  <link rel="stylesheet" href="css/motion.css" />
+</head>
+<body data-page="utilities">
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+
+  <main>
+    <section class="section">
+      <header class="section-head">
+        <p class="eyebrow">Utilities</p>
+        <h1>Water, Power & Waste</h1>
+        <p>Supply against demand, grid load and solid waste collection.</p>
+      </header>
+      <div class="grid grid-3">
+        <article class="card tilt-card" data-group="water"></article>
+        <article class="card tilt-card" data-group="power"></article>
+        <article class="card tilt-card" data-group="waste"></article>
+      </div>
+    </section>
+
+    <section class="section">
+      <header class="section-head">
+        <h2>Demand and collection trends</h2>
+        <p>How power demand and waste collection change over time.</p>
+      </header>
+      <div class="grid grid-2">
+        <article class="card">
+          <h3>Power demand <small>MW, through the day</small></h3>
+          <div data-chart="powerHourly"></div>
+        </article>
+        <article class="card">
+          <h3>Waste collected <small>tonnes per day</small></h3>
+          <div data-chart="waste7d"></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <header class="section-head">
+        <h2>Zones, feeders and wards</h2>
+        <p>Detail for each area the utilities serve.</p>
+      </header>
+      <div class="grid grid-2">
+        <article class="card span-2">
+          <h3>Water supply by zone</h3>
+          <div data-table="waterZones"></div>
+        </article>
+        <article class="card span-2">
+          <h3>Power feeders</h3>
+          <div data-table="powerFeeders"></div>
+        </article>
+        <article class="card span-2">
+          <h3>Waste collection by ward</h3>
+          <div data-table="wardWaste"></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <header class="section-head">
+        <h2>Save water and power</h2>
+        <p>Simple steps that help the whole city.</p>
+      </header>
+      <div class="grid grid-2">
+        <article class="card">
+          <h3>At home</h3>
+          <ul class="tips">
+            <li>Fix dripping taps and running toilets quickly.</li>
+            <li>Use a bucket instead of a hose to wash vehicles.</li>
+            <li>Switch off appliances at the wall when not in use.</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Waste</h3>
+          <ul class="tips">
+            <li>Separate wet and dry waste before collection.</li>
+            <li>Compost kitchen waste where you can.</li>
+            <li>Hand e-waste to authorised collection points.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <footer class="footer"><p>Sample data shown for layout.</p></footer>
+  </main>
+
+  <script src="js/data.js"></script>
+  <script src="js/background.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/content.js"></script>
+  <script src="js/motion.js"></script>
+</body>
+</html>

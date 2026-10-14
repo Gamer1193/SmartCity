@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Environment · Bhopal Smart City</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/content.css" />
+  <link rel="stylesheet" href="css/motion.css" />
+</head>
+<body data-page="environment">
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+
+  <main>
+    <section class="section">
+      <header class="section-head">
+        <p class="eyebrow">Environment</p>
+        <h1>Air, Weather & Lakes</h1>
+        <p>Air quality, forecast and the water level of the city's two lakes.</p>
+      </header>
+      <div class="grid grid-3">
+        <article class="card tilt-card" data-group="air"></article>
+        <article class="card tilt-card" data-group="weather"></article>
+        <article class="card tilt-card" data-group="lakes"></article>
+      </div>
+    </section>
+
+    <section class="section">
+      <header class="section-head">
+        <h2>Air quality in detail</h2>
+        <p>Readings from monitoring stations across the city.</p>
+      </header>
+      <div class="grid grid-2">
+        <article class="card">
+          <h3>AQI this week <small>daily average</small></h3>
+          <div data-chart="aqi7d"></div>
+        </article>
+        <article class="card">
+          <h3>AQI today <small>by time of day</small></h3>
+          <div data-chart="aqiHourly"></div>
+        </article>
+        <article class="card span-2">
+          <h3>Monitoring stations <small>latest readings</small></h3>
+          <div data-table="stations"></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <header class="section-head">
+        <h2>Rain and lakes</h2>
+        <p>Monsoon rainfall and how full the lakes are.</p>
+      </header>
+      <div class="grid grid-2">
+        <article class="card">
+          <h3>Rainfall <small>monthly, mm</small></h3>
+          <div data-chart="rainfall"></div>
+        </article>
+        <article class="card">
+          <h3>Lake storage <small>monthly, % full</small></h3>
+          <div data-chart="lakeMonthly"></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <header class="section-head">
+        <h2>Health advice by AQI</h2>
+        <p>General guidance based on the AQI band. Follow local medical advice.</p>
+      </header>
+      <div class="grid grid-2">
+        <article class="card span-2">
+          <div class="table-wrap">
+            <table class="advice">
+              <thead><tr><th>AQI</th><th>Category</th><th>Suggested action</th></tr></thead>
+              <tbody>
+                <tr><td>0–50</td><td><span class="badge good">Good</span></td><td>Enjoy outdoor activity.</td></tr>
+                <tr><td>51–100</td><td><span class="badge warn">Moderate</span></td><td>Unusually sensitive people should limit long outdoor exertion.</td></tr>
+                <tr><td>101–150</td><td><span class="badge warn">Unhealthy for sensitive groups</span></td><td>Children, older adults and people with asthma should reduce outdoor exertion.</td></tr>
+                <tr><td>151–200</td><td><span class="badge bad">Unhealthy</span></td><td>Everyone should reduce prolonged outdoor exertion. Wear a well-fitted mask outside.</td></tr>
+                <tr><td>201+</td><td><span class="badge bad">Very unhealthy</span></td><td>Avoid outdoor activity. Keep windows closed and use an air purifier if you have one.</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <footer class="footer"><p>Sample data shown for layout.</p></footer>
+  </main>
+
+  <script src="js/data.js"></script>
+  <script src="js/background.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/content.js"></script>
+  <script src="js/motion.js"></script>
+</body>
+</html>
